@@ -1,0 +1,18 @@
+<header>
+    <div class="navbar bg-primary shadow-sm">
+        <div class="navbar-brand align-item-center d-flex ms-2">
+            <i style="font-size:40px; color: white;" class="fas fa-shipping-fast">&nbsp;
+            </i>
+            <strong style="font-size:25px; color:aliceblue">My-Kart</strong>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="serach products">
+            </div>
+            <button class="fas fa-search search-icon"></button>
+        </div>
+        <button routerLink="cart" class="btn btn primary me-2">
+            <i style="font-size: 25px;" class="fas fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItemNumber}}</div>
+        </button>
+    </div>
+</header>
+

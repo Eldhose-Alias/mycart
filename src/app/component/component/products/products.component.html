@@ -1,0 +1,43 @@
+<div class="cart-top container-fluid">
+   <div class="container d-flex">
+    <div class="items">
+        <a>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100">
+            <h6>All Products</h6>
+        </a>
+    </div>
+    <div class="items">
+        <a>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100">
+            <h6>Electronics</h6>
+        </a>
+    </div>
+    <div class="items">
+        <a>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100">
+            <h6>Fashions</h6>
+        </a>
+    </div>
+    <div class="items">
+        <a>
+            <img style="width:70px; margin-top:12px;" src="https://th.bing.com/th/id/R.affd66e381cb059e3e12d44d8ec8bbdb?rik=ttifQMAwFQiYrA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-DRR-PR2v3ZQ%2fTlVJeCpIM6I%2fAAAAAAAABOM%2fHPUFtUU2Fi4%2fs1600%2fnecklace-zoom-DSC_9820.jpg&ehk=7MiZE0ukSdK9zw4xRnNhRWKoaZIF8Qotk%2bynA0TYSWU%3d&risl=&pid=ImgRaw&r=0">
+            <h6>Jewlleries</h6>
+        </a>
+     </div>
+   </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+        <div class="card col-md-3">
+            <img src="{{item.image}}" style="align-items: center;">
+            <h4 class="itemdata">{{item.title}}</h4>
+            <p class="itemdata">{{item.description}}</p>
+            <p><strong>Price:</strong>${{item.price}}</p>
+            <p><strong>Category: </strong>{{item.category}}</p>
+            <button class="btn btn-primary" (click)="addtocart(item)">Add to Cart</button>
+        </div>
+    </ng-container>
+    </div>
+</div>
